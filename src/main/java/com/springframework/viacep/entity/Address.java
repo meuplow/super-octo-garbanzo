@@ -18,7 +18,7 @@ public class Address {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	private String cep;
+	private Long cep;
 	private String logradouro;
 
 	protected Address() {}
@@ -28,7 +28,7 @@ public class Address {
 	 * @param cep
 	 * @param logradouro
 	 */
-	public Address(String cep, String logradouro) {
+	public Address(Long cep, String logradouro) {
 		super();
 		this.cep = cep;
 		this.logradouro = logradouro;
@@ -38,7 +38,7 @@ public class Address {
 		return id;
 	}
 
-	public String getCep() {
+	public Long getCep() {
 		return cep;
 	}
 
