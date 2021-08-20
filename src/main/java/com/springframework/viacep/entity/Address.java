@@ -49,7 +49,7 @@ public class Address {
 
 	@Override
 	public String toString() {
-		return "Endereço [id=" + id + ", cep=" + cep + ", logradouro=" + logradouro + "]";
+		return "Endereço[id=" + id + ", cep=" + cep + ", logradouro=" + logradouro + "]";
 	}
 	
 }
