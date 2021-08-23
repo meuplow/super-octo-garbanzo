@@ -18,38 +18,34 @@ public class Address {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	private Long cep;
-	private String logradouro;
+	private Long zip;
+	private String publicPlace;
 
 	protected Address() {}
 
 	
 	/**
-	 * @param cep
+	 * @param zip
 	 * @param logradouro
 	 */
-	public Address(Long cep, String logradouro) {
+	public Address(Long zip, String publicPlace) {
 		super();
-		this.cep = cep;
-		this.logradouro = logradouro;
+		this.zip = zip;
+		this.publicPlace = publicPlace;
 	}
 
-	public Long getId() {
-		return id;
+	public Long getZip() {
+		return zip;
 	}
 
-	public Long getCep() {
-		return cep;
+	public String getPublicPlace() {
+		return publicPlace;
 	}
-
-	public String getLogradouro() {
-		return logradouro;
-	}
-
 
 	@Override
 	public String toString() {
-		return "Endereço[id=" + id + ", cep=" + cep + ", logradouro=" + logradouro + "]";
+		return "Address [zip=" + zip + ", publicPlace=" + publicPlace + "]";
 	}
+
 	
 }
