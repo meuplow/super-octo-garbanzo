@@ -14,5 +14,5 @@ import com.springframework.viacep.model.Address;
  *
  */
 public interface AddressRepository extends CrudRepository<Address, Long>{
-	Address findByZip(long zip);
+	Address findByZip(String zip);
 }
