@@ -18,7 +18,7 @@ public class Address {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	private Long zip;
+	private String zip;
 	private String publicPlace;
 
 	protected Address() {}
@@ -28,13 +28,13 @@ public class Address {
 	 * @param zip
 	 * @param logradouro
 	 */
-	public Address(Long zip, String publicPlace) {
+	public Address(String zip, String publicPlace) {
 		super();
 		this.zip = zip;
 		this.publicPlace = publicPlace;
 	}
 
-	public Long getZip() {
+	public String getZip() {
 		return zip;
 	}
 
