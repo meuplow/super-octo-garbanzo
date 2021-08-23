@@ -3,8 +3,6 @@
  */
 package com.springframework.viacep.repository;
 
-import java.util.List;
-
 import org.springframework.data.repository.CrudRepository;
 
 import com.springframework.viacep.model.Address;

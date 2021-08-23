@@ -18,7 +18,7 @@ import com.springframework.viacep.repository.AddressRepository;
  */
 
 @RestController
-@RequestMapping("/api/address/zip")
+@RequestMapping("/api/addresses/zip")
 public class AddressRestController {
 	
 	@Autowired

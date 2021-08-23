@@ -29,7 +29,7 @@ public class AddressRestControllerTest {
 
 	@Test
 	void testGetAddressSuccess() throws Exception {
-		mvc.perform(MockMvcRequestBuilders.get("/api/address/zip/94935410"))
+		mvc.perform(MockMvcRequestBuilders.get("/api/addresses/zip/94935410"))
 		.andExpect(status().isOk())
 		.andExpect(content().contentType(MediaType.APPLICATION_JSON))
 		.andExpect(jsonPath("$.zip").value("94935410"))

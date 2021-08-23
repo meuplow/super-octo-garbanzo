@@ -3,10 +3,12 @@
  */
 package com.springframework.viacep.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * @author Gabriel
@@ -14,19 +16,25 @@ import javax.persistence.Id;
  */
 
 @Entity
+@Table(name = "addresses")
 public class Address {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
+	
+	@Column(name = "zip")
 	private String zip;
+	
+	@Column(name = "public_place")
 	private String publicPlace;
+	
 
-	protected Address() {}
+	public Address() {}
 
 	
 	/**
 	 * @param zip
-	 * @param logradouro
+	 * @param publicPlace
 	 */
 	public Address(String zip, String publicPlace) {
 		super();

@@ -1,0 +1,7 @@
+DROP TABLE addresses IF EXISTS;
+
+CREATE TABLE addresses (
+  id INTEGER IDENTITY PRIMARY KEY,
+  zip VARCHAR(10) NOT NULL,
+  public_place  VARCHAR(40) NOT NULL
+);
