@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.springframework.viacep.entity;
+package com.springframework.viacep.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
