@@ -10,6 +10,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.springframework.viacep.rest.JacksonCustomAddressSerializer;
+
 /**
  * @author Gabriel
  *
@@ -17,6 +20,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "addresses")
+@JsonSerialize(using = JacksonCustomAddressSerializer.class)
 public class Address {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
