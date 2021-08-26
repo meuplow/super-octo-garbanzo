@@ -26,6 +26,6 @@ public class ApplicationSwaggerConfig {
 	public Docket customDocket() {
 		return new Docket(DocumentationType.SWAGGER_2).select().apis(RequestHandlerSelectors.any())
 				.paths(PathSelectors.any()).build();
-
 	}
+	
 }
