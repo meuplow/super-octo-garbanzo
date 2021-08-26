@@ -110,7 +110,6 @@ public class Address {
 		return ibge;
 	}
 
-
 	public String getGia() {
 		return gia;
 	}
@@ -125,7 +124,9 @@ public class Address {
 
 	@Override
 	public String toString() {
-		return "Address [zip=" + zip + ", publicPlace=" + publicPlace + "]";
+		return "Address [zip=" + zip + ", publicPlace=" + publicPlace + ", complement=" + complement + ", district="
+				+ district + ", city=" + city + ", federativeUnit=" + federativeUnit + ", ibge=" + ibge + ", gia=" + gia
+				+ ", ddd=" + ddd + ", siafi=" + siafi + "]";
 	}
 
 	
